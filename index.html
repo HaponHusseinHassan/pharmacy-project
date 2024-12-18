@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Health<span>Pharma</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="home-content">
+            <h1>Welcome to <span>HealthPharma</span></h1>
+            <p>Your trusted pharmacy for health solutions and medicines.</p>
+            <a href="#products" class="btn">Explore Products</a>
+        </div>
+        <div class="home-image">
+            <img src="first.jpg" alt="Pharmacy Home">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>At HealthPharma, we provide quality medicines and healthcare solutions for your wellbeing. Our professional staff ensures trusted services every day.</p>
+        <div class="about-image">
+            <img src="second.jpg" alt="About Image">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <i class="fas fa-prescription-bottle-alt"></i>
+                <h3>Pharmacy Services</h3>
+                <p>Providing over-the-counter and prescription medications.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-truck"></i>
+                <h3>Home Delivery</h3>
+                <p>Quick and safe delivery of medicines to your doorstep.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-user-md"></i>
+                <h3>Consultations</h3>
+                <p>Free consultations with our licensed pharmacists.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <h2>Our Products</h2>
+        <div class="product-gallery">
+            <div class="product-item">
+                <img src="third.jpg" alt="Product 1">
+                <h3>Medicine 1</h3>
+            </div>
+            <div class="product-item">
+                <img src="four.jpg" alt="Product 2">
+                <h3>Medicine 2</h3>
+            </div>
+            <div class="product-item">
+                <img src="five.jpg" alt="Product 3">
+                <h3>Medicine 3</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 HealthPharma. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Toggle Mobile Menu
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
